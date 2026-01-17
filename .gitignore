@@ -1,0 +1,7 @@
+### Windows ###
+# Windows thumbnail cache files
+
+*.psd
+*.ai
+*.mov
+*.mp4
