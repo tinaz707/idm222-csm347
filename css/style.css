@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Press-Start-2P';
+    src: url(/content/fonts/pressstart2p/PressStart2P.ttf);
+}
+
+@font-face {
+    font-family: 'Home-Video';
+    src: url(/content/fonts/Home_Video/HomeVideo.ttf);
+}
+
+@font-face {
+    font-family: 'Home-Video-Bold';
+    src: url(/content/fonts/Home_Video/HomeVideoBold.ttf);
+}
+
+@font-face {
+    font-family: 'K2D';
+    src: url(/content/fonts/K2D/K2D-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'K2D-Semi-Bold';
+    src: url(/content/fonts/K2D/K2D-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'K2D-Bold';
+    src: url(/content/fonts/K2D/K2D-Bold.ttf);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+:root{
+    --very-light-purple: #F1EAF6;
+    --light-purple: #EADBF2;
+    --pastel-purple: #D2BAE0;
+    --background-dark-purple: #100113;
+    --color-black:black;
+    --light-mode-purple: #290930;
+
+
+    --large-h1: 60px;
+    --medium-h1: 36px;
+    --small-h1: 32px;
+
+    --large-h2: 30px;
+    --medium-h2: 32px;
+    --small-h2: 24px;
+
+    --size-h3: 20px;
+    
+    --small-p: 18px;
+    --medium-p: 20px;
+    
+
+
+}
+
+body{
+    /* background-color: var(--color-black); */
+}
+
+p{
+    color: var(--light-purple);
+    font-family: 'K2D';
+}
+
+h1, h2, h3{
+    color: var(--light-purple);
+    font-family: 'Press-Start-2P';
+}
