@@ -53,12 +53,24 @@
         <!--Hero Section-->
         <section class ="hero">
 
-            <!--this would need a media query-->
-            <img
-                class="top-stars"
-                src="Content/Images/hanging_star_Mobile.png" 
-                alt="a single star hanging off a line"
-            >
+            <!-- <figure class="top-stars">
+                <img
+                    class=""
+                    src="Content/Images/hanging_star_Mobile.png" 
+                    alt="a single star hanging off a line"
+                >
+            </figure> -->
+
+            <picture>
+                <source media="(min-width: 1024px)" srcset="Content/Images/hanging_star_desk.wepb">
+                <source media="(min-width: 720px)" srcset="Content/Images/hanging_star_tab.webp">
+                <img
+                    class=""
+                    src="Content/Images/hanging_star_M.webp" 
+                    alt="a single star hanging off a line"
+                >
+            </picture>
+
             
             <div class="intro-text">
                 <h1> UX/ID Designer</h1>
@@ -97,10 +109,11 @@
             
         <section class="cs-work-view">
             <!--tune today-->
-            <div class="tune-today-div">
+            <div class="project-div">
 
                 <div class="cs-snip-title">
-                    <h1>01 Tune Today</h1>
+                    <h1>01</h1>
+                    <h1>Tune Today</h1>
                 </div>
 
                 <img
@@ -125,10 +138,11 @@
             </div>
 
                     <!--Church-->
-            <div class="church-redesign-div">
+            <div class="project-div">
 
                 <div class="cs-snip-title">
-                    <h1>02 Church Redesign</h1>
+                    <h1>02</h1>
+                    <h1>Church Redesign</h1>
                 </div>
 
 
@@ -156,10 +170,11 @@
             </div>
 
                     <!--Fandango-->
-            <div class="fandango-redesign-div">
+            <div class="project-div">
 
                 <div class="cs-snip-title">
-                    <h1>03 Fandango Homepage Redesign</h1>
+                    <h1>03</h1> 
+                    <h1>Homepage Redesign</h1>
                 </div>
 
 
@@ -201,7 +216,7 @@
         <footer>
             <div class="footer-links">
                 <!--email-->
-                <div class="email">
+                <div class="link">
                     <img
                         class="footer-img" 
                         src="Content/Images/icons/email_logo_thick.png" 
@@ -214,7 +229,7 @@
                 </div>
 
                 <!--Linkin-->
-                <div class="linkedin">
+                <div class="link">
                     <img
                         class="footer-img" 
                         src="Content/Images/icons/linked_purple.webp" 
@@ -228,7 +243,7 @@
                 </div>
 
                 <!--GitHub-->
-                <div class="github">
+                <div class="link">
                     <img
                         class="footer-img" 
                         src="Content/Images/icons/git.webp" 
