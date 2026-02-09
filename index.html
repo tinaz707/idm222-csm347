@@ -61,15 +61,21 @@
                 >
             </figure> -->
 
-            <picture>
-                <source media="(min-width: 1024px)" srcset="Content/Images/hanging_star_desk.wepb">
-                <source media="(min-width: 720px)" srcset="Content/Images/hanging_star_tab.webp">
-                <img
-                    class=""
-                    src="Content/Images/hanging_star_M.webp" 
-                    alt="a single star hanging off a line"
-                >
-            </picture>
+            <section class="hero-photo">
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="content/Images/Persona/persona_2x_index.webp">
+                    <source 
+                        media="(min-width: 720px)"
+                        srcset="content/Images/Persona/persona_1x_index.webp"
+                    >
+                    <img
+                        src="Content/Images/hanging_star_m.webp" 
+                        alt="a single star hanging off a line"
+                    >
+                </picture>                
+            </section>
+
+
 
             
             <div class="intro-text">
@@ -81,31 +87,32 @@
 
             </div>
 
-            <div class="button-box">
-                <a href="about_me.html" class="button-link"></a>
-                <div class="text-button">Read More About Me</div>
+            <div class="read-more-section">
+                <div class="button-box">
+                    <a href="about_me.html" class="button-link">Read More About Me</a>
+                </div>
+
+                <img 
+                    class="dangaling-persona"
+                    src="Content/Images/Persona/persona_1x_M.webp"
+                    alt="white pixel version of character christina hanging off the 'Read More About Me' button by her hoodie"
+                >
             </div>
 
-            <img 
-                class="dangaling-persona"
-                src="Content/Images/Persona/persona_1x_M.webp"
-                alt="white pixel version of character christina hanging off the 'Read More About Me' button by her hoodie"
-            >
 
 
         </section>
 
         <!--Portfolio Section-->
         <section class="portfolio-intro">
-            <div class="sub-heading">
-                <img src="" alt="">
+            <div class="page-section-text">
+                <img class="pixel-star" src="content/Images/icons/purple_star.webp" alt="pixel purple star">
                 <h2>Portfolio</h2> 
             </div>
             
             <p>Check out some of my work</p>
         </section>
-
-
+        
             
         <section class="cs-work-view">
             <!--tune today-->
@@ -121,19 +128,20 @@
                 src="Content/Images/covers/TuneToday'.webp" 
                 alt="Two smartphones displaying the TuneToday guitar app, the bigger screen showing the tuning interface and the smaller screen showing the song library">
                 
-                <p class="sub-img-text">Designing a guitar tuning app!</p>
 
-
-
-                <div>
+                <div class="cs-info">
+                    <p class="sub-img-text">Designing a guitar tuning app!</p>
+                    
                     <p>Tune Today lets users get through the task of tuning their guitar to jumping straight into learning a song!</p>
+                    
+                    <div class="button-box">
+                        <a href="about_me.html" class="button-link">View Case Study</a>
+                    </div>                
+                
                 </div>
+                
 
 
-                <div class="button-box">
-                    <a href="about_me.html" class="button-link"></a>
-                    <div class="text-button">View Case Study</div>
-                </div>
 
             </div>
 
@@ -153,18 +161,19 @@
                  alt="A Laptop with a Phone in front of it to the right showcasing the homepage screen of The Philadelphia Mar Thoma Church Redesign Website"
                 >
                 
-                <p class="sub-img-text">Redesigning a church website!</p>
                 
-                <div>
+                
+                <div class="cs-info">
+                    <p class="sub-img-text">Redesigning a church website!</p>
+
                     <p>
                         The Philadelphia Mar Thoma Church Website provides information and encourages engagement of many different events
                     </p>
-                </div>
+                    
+                    <div class="button-box">
+                        <a href="about_me.html" class="button-link">View Case Study</a>
 
-
-                <div class="button-box">
-                    <a href="about_me.html" class="button-link"></a>
-                    <div class="read-me-text-button">View Case Study</div>
+                    </div>
                 </div>
 
             </div>
@@ -173,8 +182,8 @@
             <div class="project-div">
 
                 <div class="cs-snip-title">
-                    <h1>03</h1> 
-                    <h1>Homepage Redesign</h1>
+                    <h1>03</h1>
+                    <h1>Fandango Homepage Redesign</h1>
                 </div>
 
 
@@ -184,19 +193,20 @@
                     alt="A Laptop with a screen showcasing the Low-Fidelity Wireframe of the Redesigned Fandango Homepage"
                 >
                 
-                <p class="sub-img-text">Redesigning a church website!</p>
 
 
-                <div>
+
+                <div class="cs-info">
+                    <p class="sub-img-text">Redesigning a church website!</p>
+
                     <p>
                         This redesign focused on improving fandangos homepage which suffered from cluttered and overly long design, minimal feedback on interactive elements, and poorly organized navigation areas…
                     </p>
-                </div>
 
+                    <div class="button-box">
+                        <a href="about_me.html" class="button-link">View Case Study</a>
+                    </div>
 
-                <div class="button-box">
-                    <a href="about_me.html" class="button-link"></a>
-                    <div class="text-button">View Case Study</div>
                 </div>
 
             </div>
@@ -206,16 +216,59 @@
 
 
         <!--link to projects page-->
-        <a href="work.html">
-            <div class="button-link">Want to see more..!</div>
-        </a>
+        <div class="see-more-work">
+            <a href="work.html"> Want to see more..?!⟶ </a>
+        </div>
+
     
     </main>
 
         <!--footer-->
         <footer>
-            <div class="footer-links">
-                <!--email-->
+            
+
+            <h2>Any questions? Contact Me!</h2>
+
+            <div class="mobile-footer">
+                <div class="link">
+                      
+                    <a href="mailto:csm37@drexel.edu">
+                        <img
+                        class="footer-img" 
+                        src="Content/Images/icons/email_logo_thick.png" 
+                        alt="email icon"
+                        >
+                    </a>
+
+                       
+
+                    <a href="https://www.linkedin.com/in/christina-mathews-ba21832b8/" target="_blank">
+                        <img
+                        class="footer-img" 
+                        src="Content/Images/icons/linked_purple.webp" 
+                        alt="linkedin icon"
+                        >
+                    </a>
+
+                        
+
+                    <a href="https://github.com/tinaz707" target="_blank">
+                       <img
+                        class="footer-img" 
+                        src="Content/Images/icons/git.webp" 
+                        alt="github icon"
+                        >
+                    </a>
+
+
+                </div>
+
+            </div>
+
+
+
+            <div class="desk-footer">
+                <!-- email -->
                 <div class="link">
                     <img
                         class="footer-img" 
@@ -223,12 +276,10 @@
                         alt="email icon"
                     >
 
-                    <a href="mailto:csm37@drexel.edu">
-                        <div class="footer-text">csm347@gmail.com</div>
-                    </a>
+                    <a href="mailto:csm37@drexel.edu">csm347@gmail.com</a>
                 </div>
 
-                <!--Linkin-->
+                <!-- Linkin -->
                 <div class="link">
                     <img
                         class="footer-img" 
@@ -236,13 +287,11 @@
                         alt="linkedin icon"
                     >
 
-                    <a href="https://www.linkedin.com/in/christina-mathews-ba21832b8/" target="_blank">
-                        <div class="footer-text">LinkedIn</div>
-                    </a>
+                    <a href="https://www.linkedin.com/in/christina-mathews-ba21832b8/" target="_blank">LinkedIn</a>
 
                 </div>
 
-                <!--GitHub-->
+                <!-- GitHub -->
                 <div class="link">
                     <img
                         class="footer-img" 
@@ -250,9 +299,7 @@
                         alt="github icon"
                     >
 
-                    <a href="https://github.com/tinaz707" target="_blank">
-                       <div class="footer-text">Git Hub</div> 
-                    </a>
+                    <a href="https://github.com/tinaz707" target="_blank">Git Hub</a>
 
                 </div>
 
