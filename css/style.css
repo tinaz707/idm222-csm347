@@ -48,7 +48,7 @@
 
     --size-h3: 20px;
     
-    --small-p: 16px;
+    --small-p: 1rem;
     --default-p: 18px;
     --medium-p: 20px;
     
@@ -349,7 +349,7 @@ h1, h2, h3{
     flex-direction: row;
     align-items: baseline;
     gap: var(--tiny-gap);
-    margin: 40px 0 0 15px;
+    margin-top: 40px;
 
     h2{
         margin: 10px 0;
@@ -357,8 +357,8 @@ h1, h2, h3{
     }
 
     .pixel-star{
-        
-        width: 30px;
+         
+        width: 35px;
         margin: 5px;
     }
 }
@@ -372,6 +372,7 @@ h1, h2, h3{
     flex-direction: column;
     gap: var(--large-gap);
 }
+
 
 .project-div{
 
@@ -448,6 +449,179 @@ h1, h2, h3{
     
    
     
+}
+
+/*cs pages*/
+.cs-hero-img{
+    width: 90%;
+    margin:auto;
+    display: flex;
+   
+}
+
+
+.cs-details-section{
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--small-gap);
+
+    
+    margin: var(--large-gap);
+    
+     #duration{
+            grid-column: 2;
+        }
+
+    .cs-details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: var(--element-margins);
+        
+       
+
+        .cs-detail-title{
+            font-family: var(--heading-font);
+            font-size:var(--size-h3);
+        }
+
+        
+    }
+
+}
+
+
+.page-title{
+    padding: var(--element-margins);
+    margin: var(--element-margins);
+    
+    h1{
+        margin: var(--element-margins) 0;
+    }
+
+}
+
+.cs-body{
+    padding: var(--element-margins);
+    margin: var(--element-margins);
+
+      display: flex;
+      flex-direction: column;
+      gap: var(--medium-gap);
+}
+
+.cs-sub-sections{
+    p{
+        margin: 15px 0;
+    }
+
+    .cs-section-images{
+        max-width: 100%;
+        margin: var(--image-gap) 0;
+        border-radius: var(--small-gap);
+    }
+}
+
+.arrows-descr{
+    display: flex;
+    flex-direction: column;
+    gap: var(--small-gap);
+    padding: var(--small-gap) 0;
+
+    .arrow-section{
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+
+        p{
+            margin: 5px 0;
+        }
+
+        .bullet-point-arrow{
+            height: 2rem;
+            margin: 5px;
+        }
+    }
+
+}
+
+
+
+
+/*Photo Page*/
+.photo-all{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: var(--element-margins);
+    gap: var(--large-gap);
+
+    figure{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        img{
+            max-width: 100%;
+            height: auto;
+            margin: var(--element-margins);
+            border: 2px solid var(--light-purple);
+            border-radius: 20px;
+        }
+
+        figcaption{
+            color: var(--light-purple);
+            font-family: var(--p-font);
+        }
+    }
+
+
+}
+
+
+@media screen and (min-width: 720px) {
+      .cs-details-section{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        margin: var(--large-gap);
+    
+     #duration{
+            grid-column: 2;
+        }
+    }
+
+    .photo-all{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(3,1fr);
+        column-gap: 0;
+
+        img{
+            margin: 0;
+            max-width: 100%;
+        }
+        .mountains-photo{
+            grid-column: 4/span 8;
+        }
+        
+        .greyst-photo{
+            grid-column: 1/span2;
+            grid-row: 2;
+            
+        }
+
+        .glac-photo{
+            grid-column: 7/span12;
+            grid-row: 2;
+        }
+
+        .india-photo{
+            grid-column: 4/span 8;
+        }
+    }
 }
 
 
@@ -527,24 +701,3 @@ footer{
 
 }
     
-
-.page-title{
-    padding: var(--element-margins);
-    margin: var(--element-margins);
-    
-    h1{
-        margin: var(--element-margins) 0;
-    }
-
-}
-
-.page-section{
-    display: flex;
-    flex-direction: row;
-    gap: var(--small-gap);
-
-    .page-section-star{
-        height: auto;
-    }
-
-}
