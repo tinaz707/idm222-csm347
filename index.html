@@ -14,37 +14,44 @@
     <!--nav-->
     <header class="top-nav">
 
-        <div class="logo">
-            <a href="index.html">
-                <div class="site-name">
-                    Christina Mathews
-                </div>
-            </a>
-        </div>
-
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-
-                <li>
-                    <a href="work.html">Work</a>
-                    <ul class="nav-sub-menu"><!-- subheadings-->
-                        <li><a href="">Tune Today</a></li>
-                        <li><a href="pmtc_cs.html">Church Redesign</a></li>
-                        <li><a href=""></a>Fandango Redesign</li>
-                    </ul>
+        <nav class="navbar">
+            <div class="site-name">
+                        <a href="index.html">Christina Mathews</a>
+            </div>
+            
+            <ul class="menu-all">
+                <li class="nav-menu-item">
+                    <a href="index.html">Home</a>
                 </li>
 
-                <li>
+                <li class="nav-menu-item">
+                    <a href  ="work.html">Work</a>
+                    <!-- <ul class="nav-sub-menu">
+                        <li class="nav-menu-item"><a href="">Tune Today</a></li>
+                        <li class="nav-menu-item"><a href="pmtc_cs.html">Church Redesign</a></li>
+                        <li class="nav-menu-item"><a href=""></a>Fandango Redesign</li>
+                    </ul> -->
+                </li>
+
+                <li class="nav-menu-item">
                     <a href="">About Me</a>
-                    <ul class="nav-sub-menu"><!-- subheadings-->
-                        <li><a href="art_work.html">Art Work</a></li>
-                        <li><a href="">Video Editing</a></li>
-                        <li><a href=""></a>Game Dev</li>
-                        <li><a href=""></a>Photography</li>
-                    </ul>                
+                    <!-- <ul class="nav-sub-menu">
+                        <li class="nav-menu-item"><a href="art_work.html">Art Work</a></li>
+                        <li class="nav-menu-itemmenu"><a href=""></a>Photography</li>
+                    </ul>                 -->
                 </li> 
             </ul>
+
+            <div class="navbar-icons">
+                <div class="navbar-logo-open">
+                    <img src="content/Images/icons/nav_hamburger.webp" alt="hamburger menu">
+                </div>
+                <div class="navbar-logo-close">
+                    <img src="content/Images/icons/nav_hamburger_close.webp" alt="an 'x' button">
+                </div>
+            </div>
+
+
         </nav>
 
     </header>
@@ -53,26 +60,17 @@
         <!--Hero Section-->
         <section class ="hero">
 
-            <!-- <figure class="top-stars">
-                <img
-                    class=""
-                    src="Content/Images/hanging_star_Mobile.png" 
-                    alt="a single star hanging off a line"
-                >
-            </figure> -->
-
             <section class="hero-photo">
                 <picture>
-                    <source media="(min-width: 1024px)" srcset="content/Images/Persona/persona_2x_index.webp">
-                    <source 
-                        media="(min-width: 720px)"
-                        srcset="content/Images/Persona/persona_1x_index.webp"
-                    >
+                    <source media="(min-width: 1024px)" srcset="content/Images/Persona/persona_3x_index.webp">
+    
                     <img
+                        class="single-star-hero"
                         src="Content/Images/hanging_star_m.webp" 
                         alt="a single star hanging off a line"
                     >
-                </picture>                
+                </picture>     
+    
             </section>
 
 
@@ -92,11 +90,17 @@
                     <a href="about_me.html" class="button-link">Read More About Me</a>
                 </div>
 
-                <img 
-                    class="dangaling-persona"
-                    src="Content/Images/Persona/persona_1x_M.webp"
-                    alt="white pixel version of character christina hanging off the 'Read More About Me' button by her hoodie"
-                >
+                <picture>
+                    <source class="dangaling-persona-2" media="(min-width: 720px)" srcset="content/Images/Persona/persona_2x_hero.webp">
+                        
+                    <img 
+                        class="dangaling-persona"
+                        src="Content/Images/Persona/persona_1x_M.webp"
+                        alt="white pixel version of character christina hanging off the 'Read More About Me' button by her hoodie"
+                    >                    
+                </picture>
+
+
             </div>
 
 
@@ -110,7 +114,7 @@
                 <h2>Portfolio</h2> 
             </div>
             
-            <p>Check out some of my work</p>
+            <p class="portfolio-small-text">Check out some of my work</p>
         </section>
         
             
@@ -119,7 +123,7 @@
             <div class="project-div">
 
                 <div class="cs-snip-title">
-                    <h1>01</h1>
+                    <h1 class="project-num">01</h1>
                     <h1>Tune Today</h1>
                 </div>
 
@@ -135,7 +139,7 @@
                     <p>Tune Today lets users get through the task of tuning their guitar to jumping straight into learning a song!</p>
                     
                     <div class="button-box">
-                        <a href="about_me.html" class="button-link">View Case Study</a>
+                        <a href="" class="button-link">View Case Study</a>
                     </div>                
                 
                 </div>
@@ -149,7 +153,7 @@
             <div class="project-div">
 
                 <div class="cs-snip-title">
-                    <h1>02</h1>
+                    <h1 class="project-num">02</h1>
                     <h1>Church Redesign</h1>
                 </div>
 
@@ -171,7 +175,7 @@
                     </p>
                     
                     <div class="button-box">
-                        <a href="about_me.html" class="button-link">View Case Study</a>
+                        <a href="pmtc_cs.html" class="button-link">View Case Study</a>
 
                     </div>
                 </div>
@@ -182,7 +186,7 @@
             <div class="project-div">
 
                 <div class="cs-snip-title">
-                    <h1>03</h1>
+                    <h1 class="project-num">03</h1>
                     <h1>Fandango Homepage Redesign</h1>
                 </div>
 
@@ -204,7 +208,7 @@
                     </p>
 
                     <div class="button-box">
-                        <a href="about_me.html" class="button-link">View Case Study</a>
+                        <a href=".." class="button-link">View Case Study</a>
                     </div>
 
                 </div>
@@ -306,7 +310,9 @@
             </div>
 
         </footer>
-
-        
+     <script src="scripts/main.js"></script>   
 </body>
+
+
+
 </html>

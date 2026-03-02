@@ -3,15 +3,6 @@
     src: url(/content/fonts/pressstart2p/PressStart2P.ttf);
 }
 
-@font-face {
-    font-family: 'Home-Video';
-    src: url(../content/fonts/Home_Video/HomeVideo.ttf);
-}
-
-@font-face {
-    font-family: 'Home-Video-Bold';
-    src: url(/content/fonts/Home_Video/HomeVideoBold.ttf);
-}
 
 @font-face {
     font-family: 'K2D';
@@ -43,7 +34,7 @@
     --heading-font: 'Press-Start-2P', Arial, Helvetica, sans-serif; ;
     --p-font: 'K2D', Arial, Helvetica, sans-serif;
     --p-font-bold: 'K2D-Bold', Arial, Helvetica, sans-serif;
-    --button-font:'Home-Video', Arial, Helvetica, sans-serif;
+    --button-font:'K2D-Bold', Arial, Helvetica, sans-serif;
 
 
 
@@ -67,10 +58,13 @@
     --medium-gap: 40px;
     --large-gap: 60px;
     --huge-gap: 100px;
+    --nav-heading-gap: 68px;
 
     --line-height: 1.5;
+    --letter-space: 1.5px;
 
     --section-gap: 40px; /*the space from a section header to paragrpah*/
+    --side-margin: 80px;
     --items-gap: 100px;
 
     --element-margins: 15px;
@@ -80,15 +74,10 @@
 
 
 main{
-    margin: 24px;
+    margin: 40px 24px;
 }
 
-@media (min-width: 1024px){
-    main{
-        margin: 40px;
-    }
 
-}
 
 body{
     /* background-color: var(--color-black); */
@@ -102,12 +91,148 @@ p{
     font-family: var(--p-font);
     margin: 0;
     line-height: var(--line-height);
+    font-size: var(--default-p);
 }
 
 h1, h2, h3{
     color: var(--light-purple);
     font-family: var(--heading-font);
+     letter-spacing: var(--letter-space);
+    
 }
+
+
+
+/*navigation*/
+ 
+.top-nav{
+    background-color: var(--color-black); /*its not covereing the margin parts*/
+    border-bottom: 2px solid var(--light-purple);
+  
+}
+
+.navbar{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 var(--side-margin);
+    
+    list-style-type: none;
+    line-height: var(--line-height);
+   
+    a{
+        text-decoration: none;
+        color: var(--light-purple);
+        font-family: var(--p-font);
+    }
+
+    .site-name{
+        margin: var(--small-gap);
+
+        a{
+            font-family: var(--button-font);
+        }
+    }
+
+        .menu-all{
+            
+            display: flex;
+            list-style-type: none; 
+
+            .nav-menu-item{
+                padding: 25px 25px;
+
+                a{
+                    padding: 10px 25px;
+
+                    &:hover{
+                        color: var(--background-dark-purple);
+                        background-color: var(--light-purple);
+
+                    }
+                }
+
+            }
+
+        }
+
+        .navbar-icons{
+            display: none;
+           
+            cursor: pointer;
+            margin: 10px;
+            
+            img{
+                padding-top: 5px;
+                height: 30px;
+                
+            }
+        }
+}
+
+
+@media screen and (min-width: 1024px){
+    main, .navbar{
+        margin:  20px 40px;
+    }
+
+}
+
+
+@media screen and (min-width: 1444px){
+    main, .navbar{
+        margin: 20px 80px;
+    }
+}
+
+@media screen and (max-width: 1024px){ /*is screen is <1024px then do this...*/
+
+    .navbar .menu-all{ /*nav disappers*/
+        display: none;
+        /* background-color: var(--color-black);
+        position: absolute;
+        top: 9vh;
+        width: 100%;
+        left: 0;
+        height: 100vh;
+
+
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap: var(--large-gap);
+
+        font-size: var(--size-h3);
+         */
+
+    }
+
+
+    .navbar{
+        margin: 20px;
+    }
+
+    .navbar .navbar-icons{ /*nav button shows*/
+        display: block;
+    }
+
+    .navbar-logo-close{ /*nav close button hidden*/
+        display: none;
+    }
+
+ 
+        
+}
+
+.single-star-hero{
+    position: absolute;
+    right: 15px;
+    top: 12.8vh;
+}
+
 
 .preview-cs-img{
     width: 70%;
@@ -115,10 +240,13 @@ h1, h2, h3{
 }
 
 .hero{
-    margin-bottom: var(--large-gap);
+    /* margin-top: var(--nav-heading-gap); */
+    margin-bottom: var(--huge-gap);
 }
 
 .hero-photo{
+  
+    margin-bottom: var(--large-gap);
     display: flex;
     justify-content: end;
     margin: 0 auto;
@@ -160,7 +288,7 @@ h1, h2, h3{
         display: inline;
 
         margin-top:var(--element-margins) ;
-        padding: 20px 30px;
+        padding: 28px 30px;
         background-color: var(--light-purple);
         border-radius: 2rem;
         
@@ -169,34 +297,59 @@ h1, h2, h3{
         font-family: var(--button-font);
         text-transform: uppercase;
         font-size: var(--p-font);
+        letter-spacing: var(--letter-space);
     }
 }
 
 .dangaling-persona{
-    
+    max-width: 800px;
 
-    max-width: 400px;
 }
 
-@media screen and (min-width: 720px){
+
+
+@media screen and (min-width: 1024px){ /*when screen is larger than 1024px do this - desk*/
 
     .dangaling-persona{
         display: none;
-
     }
+    
+    .single-star-hero{
+    position: absolute;
+    right: -13vw;
+    width: 140%;
+    top: 15vh;
+    z-index: -5;
+
+
+
 }
+}
+
+
 
 .portfolio-intro{
     margin: var(--element-margins);
-    
-   
+
+    .portfolio-small-text{
+        margin: 0 40px;
+        font-style: italic;
+    }
 }
 
+
+.project-num{
+    font-size: var(--size-h3);
+}
+
+
 .page-section-text{
+    
     display: flex;
     flex-direction: row;
     align-items: baseline;
     gap: var(--tiny-gap);
+    margin: 40px 0 0 15px;
 
     h2{
         margin: 10px 0;
@@ -213,11 +366,11 @@ h1, h2, h3{
 
 .cs-work-view{
 
-    margin: var(--large-gap) 0;
+    /* margin: var(--large-gap) 0; */
 
     display: flex;
     flex-direction: column;
-    gap: var(--huge-gap);
+    gap: var(--large-gap);
 }
 
 .project-div{
@@ -280,7 +433,7 @@ h1, h2, h3{
 
 .see-more-work{
     text-align: end;
-    margin-bottom: var(--large-gap);
+    margin: var(--large-gap) 0;
     
     a{
         
@@ -371,6 +524,27 @@ footer{
         flex-wrap: wrap;
         margin: var(--element-margins);
     }
-    
+
 }
-       
+    
+
+.page-title{
+    padding: var(--element-margins);
+    margin: var(--element-margins);
+    
+    h1{
+        margin: var(--element-margins) 0;
+    }
+
+}
+
+.page-section{
+    display: flex;
+    flex-direction: row;
+    gap: var(--small-gap);
+
+    .page-section-star{
+        height: auto;
+    }
+
+}
