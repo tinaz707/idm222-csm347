@@ -19,26 +19,38 @@
                         <a href="index.html">Christina Mathews</a>
             </div>
             
-            <ul class="menu-all">
+            <ul class="menu-all hidden">
                 <li class="nav-menu-item">
                     <a href="index.html">Home</a>
                 </li>
 
                 <li class="nav-menu-item">
-                    <a href  ="work.html">Work</a>
-                    <!-- <ul class="nav-sub-menu">
+                    <div class="sub-image-text">
+                        <a href  ="work.html">Work</a>
+                        
+                            <img class="drop-down-img" src="content/Images/icons/un_expand.webp" alt="drop down icon">
+                            <img class="un-drop-down-img hide" src="content/Images/icons/expand.webp" alt="">
+                    </div>
+                    
+                    <ul class="nav-sub-menu sub-hide">
                         <li class="nav-menu-item"><a href="">Tune Today</a></li>
                         <li class="nav-menu-item"><a href="pmtc_cs.html">Church Redesign</a></li>
-                        <li class="nav-menu-item"><a href=""></a>Fandango Redesign</li>
-                    </ul> -->
+                        <li class="nav-menu-item"><a href="">Fandango Redesign</a></li>
+                    </ul>
                 </li>
 
                 <li class="nav-menu-item">
-                    <a href="">About Me</a>
-                    <!-- <ul class="nav-sub-menu">
+                    <div class="sub-image-text">
+                        <a href="about_me.html">About Me</a>
+
+                            <img class="drop-down-img" src="content/Images/icons/un_expand.webp" alt="drop down icon">
+                            <img class="un-drop-down-img hide" src="content/Images/icons/expand.webp" alt="">
+                    </div>                    
+                    
+                    <ul class="nav-sub-menu sub-hide">
                         <li class="nav-menu-item"><a href="art_work.html">Art Work</a></li>
-                        <li class="nav-menu-itemmenu"><a href=""></a>Photography</li>
-                    </ul>                 -->
+                        <li class="nav-menu-itemmenu"><a href="photography.html">Photography</a></li>
+                    </ul>                
                 </li> 
             </ul>
 
@@ -46,7 +58,7 @@
                 <div class="navbar-logo-open">
                     <img src="content/Images/icons/nav_hamburger.webp" alt="hamburger menu">
                 </div>
-                <div class="navbar-logo-close">
+                <div class="navbar-logo-close hide">
                     <img src="content/Images/icons/nav_hamburger_close.webp" alt="an 'x' button">
                 </div>
             </div>
@@ -61,7 +73,7 @@
         <section class ="hero">
 
             <section class="hero-photo">
-                <picture>
+                <!-- <picture>
                     <source media="(min-width: 1024px)" srcset="content/Images/Persona/persona_2x_index.webp">
     
                     <img
@@ -69,7 +81,12 @@
                         src="Content/Images/hanging_star_m.webp" 
                         alt="a single star hanging off a line"
                     >
-                </picture>     
+                </picture>      -->
+                 <img
+                        class="single-star-hero"
+                        src="Content/Images/hanging_star_m.webp" 
+                        alt="a single star hanging off a line"
+                    >
     
             </section>
 
@@ -107,7 +124,7 @@
 
         </section>
 
-        <a href="photography.html">just link for now</a>
+        <a href="art_work.html">just link for now</a>
         <!--Portfolio Section-->
         <section class="portfolio-intro">
             <div class="page-section-text">
