@@ -11,6 +11,62 @@
 </head>
 <body>
 
+        <header class="top-nav">
+
+        <nav class="navbar">
+            <div class="site-name">
+                        <a href="index.html">Christina Mathews</a>
+            </div>
+            
+            <ul class="menu-all hidden">
+                <li class="nav-menu-item">
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li class="nav-menu-item">
+                    <div class="sub-image-text">
+                        <a href  ="work.html">Work</a>
+                        
+                            <img class="drop-down-img" src="content/Images/icons/un_expand.webp" alt="drop down icon">
+                            <img class="un-drop-down-img hide" src="content/Images/icons/expand.webp" alt="">
+                    </div>
+                    
+                    <ul class="nav-sub-menu sub-hide">
+                        <li class="nav-menu-item"><a href="">Tune Today</a></li>
+                        <li class="nav-menu-item"><a href="pmtc_cs.html">Church Redesign</a></li>
+                        <li class="nav-menu-item"><a href="">Fandango Redesign</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-menu-item">
+                    <div class="sub-image-text">
+                        <a href="about_me.html">About Me</a>
+
+                            <img class="drop-down-img" src="content/Images/icons/un_expand.webp" alt="drop down icon">
+                            <img class="un-drop-down-img hide" src="content/Images/icons/expand.webp" alt="">
+                    </div>                    
+                    
+                    <ul class="nav-sub-menu sub-hide">
+                        <li class="nav-menu-item"><a href="art_work.html">Art Work</a></li>
+                        <li class="nav-menu-itemmenu"><a href="photography.html">Photography</a></li>
+                    </ul>                
+                </li> 
+            </ul>
+
+            <div class="navbar-icons">
+                <div class="navbar-logo-open">
+                    <img src="content/Images/icons/nav_hamburger.webp" alt="hamburger menu">
+                </div>
+                <div class="navbar-logo-close hide">
+                    <img src="content/Images/icons/nav_hamburger_close.webp" alt="an 'x' button">
+                </div>
+            </div>
+
+
+        </nav>
+
+    </header>
+
     <main>
         <!--Header-->
         <section class="page-title">
@@ -19,11 +75,14 @@
                 </h1>
         </section>
 
-        <img 
-        class="about-me-pic"
-        src="" 
-        alt="circle cut portrait image of Christina smiling to the camera with a border and stars to the top right of the image"
-        >
+        <figure class="about-me-pic">
+            <img               
+                src="content/Images/about/portrait_D.webp" 
+                alt="circle cut portrait image of Christina smiling to the camera with a border and stars to the top right of the image"
+            >
+        </figure>
+
+
 
         <!--About Me Section Tabs-->
         <section class="about-me-tabs">
@@ -64,66 +123,38 @@
 
         </section>
 
-        <div class="button-box">
-            <a href="..." class="button-link"></a>
-            <div class="text-button">Check Out My Resume</div>
-        </div>
+            <div class="button-box">
+                <a href="content/downloads/resume 2.pdf" target="_blank" class="button-link">Check Out My Resume</a>
+            </div>        
 
 
 
         <!--Skill Sub  Title-->
         <section class="skill-set-section">
-            <div class="page-section">
-                <img 
-                    class="page-section-star"
-                    src="" 
-                    alt="pixel star"
-                >
 
-                <div class="page-section-text">
-                    <h2 class="section-title-text">
-                        My Skill Set! :
-                    </h2> 
-                </div>        
+            
+            <!--Sub Title-->
+            <div class="page-section-text">
+                <img class="pixel-star" src="content/Images/icons/purple_star.webp" alt="pixel star">
+
+                <div>
+                    <h2 id="skill-set-h2" class="section-title-text">
+                        My Skill Set:
+                    </h2>
+                </div>
             </div>
+  
 
-            <div class="skills-images">
-
-                <figure>
-                    <p>Photoshop</p>
-                    <img src="" alt="Photoshop icon">
-                </figure>
- 
-                <figure>
-                    <p>Figma</p>
-                    <img src="" alt="Figma icon">
-                </figure>                
-                
-                <figure>
-                    <p>HTML</p>
-                    <img src="" alt="html icon">
-                </figure>
-                
-                <figure>
-                    <p>CSS</p>
-                    <img src="" alt="css icon">
-                </figure>
-                
-                <figure>
-                    <p>Premiere Pro</p>
-                    <img src="" alt="Premiere Pro icon">
-                </figure>
-                
-                <figure>
-                    <p>Illustrator</p>
-                    <img src="" alt="Illustrator icon">
+            
+                <figure class="skills-image">
+                   <img src="content/Images/about/skills_about_1x.webp" alt="">
                 </figure>
 
-            </div>
+           
         </section>
         
         <!--Character stats only for Desk + Tablet-->
-        <div class="charcter-stats">
+        <div class="charcater-stats">
             <img class="stats-three-stars" src="" alt="three stars in straight line">
 
             <!--character-->
@@ -191,87 +222,152 @@
 
 
         <!-- Others Sub Title-->
-        <div class="page-section">
-            <img 
-                class="page-section-star"
-                src="" 
-                alt="pixel star"
-            >
-
+        <div>
             <div class="page-section-text">
-                <h2 class="section-title-text">
-                    Check these out! :
-                </h2> 
+                <img class="pixel-star" src="content/Images/icons/purple_star.webp" alt="pixel star">
+
+                <div>
+                    <h2 class="section-title-text">
+                        Check These Out!
+                    </h2>
+                </div>
             </div>
+
+
+            <div class="carousel">
+                <div class="carousel-container">
+                    <ul class="carousel-item-ul">
+                        <li class="carousel-item">
+                            <a href="art_work.html">
+                                <img src="content/Images/about/ipco.webp" alt="">
+                                <p class="about-title">Art Work</p>
+                            </a>
+                        </li>
+
+                        <li class="carousel-item">
+                            <img src="content/Images/about/vid.webp" alt="">
+                            <p class="about-title">Video Editing </p>
+                        </li>
+
+                        <li class="carousel-item">
+                            <img src="content/Images/about/game.webp" alt="">
+                            <p class="about-title">Game Dev</p>
+                        </li>
+
+                        <li class="carousel-item">
+                            <a href="photography.html">
+                                <img src="content/Images/about/phot.webp" alt="">
+                                <p class="about-title">Photography</p>                                
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+                <!--the arrows to click through-->
+                <div class="arrows">
+                   <button class="carousel-left-arrow" >
+                            <img class="arrow-click" src="content/Images/artwork/left_arrow.webp"
+                            alt="arrow pointing to the left">
+                   </button>
+
+                   
+                   <button class="carousel-right-arrow">
+                        <img class="arrow-click" src="content/Images/artwork/right_arrow.webp"
+                            alt="arrow pointing to the right">
+                   </button>
+                </div>
+            </div>
+
         </div>
 
-        
-            <div class="Others-images">
-
-                <figure>
-                    <h3 class="work-other-heading">
-                        Art Work
-                    </h3>
-
-                    <img src="" alt="design of IPCO (Indian Pakistan Cultural Organization) logo design that won in 2024. It is the national animal for India (Tiger) and Pakistan(Markhor)">
-                </figure>
- 
-                <figure>
-                     <h3 class="work-other-heading">
-                        Video Editing
-                    </h3>
-
-                    <img src="" alt="2d version of Christina with hands up at the bottom with an explosion behind her">
-                </figure>                
-                
-                <figure>
-                     <h3 class="work-other-heading">
-                        Game Dev
-                    </h3>
-
-                    <img src="" alt="a pixel character in the middle of a pixelated bedroom with the moonlight shining through the single window">
-                </figure>       
-                
-                <figure>
-                     <h3 class="work-other-heading">
-                        Photography
-                    </h3>
-
-                    <img src="" alt="zoomed-in photo of oncoming traffic in India. Two men on a scooter with three cars in the background">
-                </figure>         
-            </div>
 
     </main>
 
         <!--footer-->
         <footer>
-            <div class="footer-links">
+            
 
-                <!--email-->
-                <div class="email">
+            <h2>Any questions? Contact Me!</h2>
+
+            <div class="mobile-footer">
+                <div class="link">
+                      
                     <a href="mailto:csm37@drexel.edu">
-                        <div class="footer-text">csm347@gmail.com</div>
+                        <img
+                        class="footer-img" 
+                        src="Content/Images/icons/email_logo_thick.png" 
+                        alt="email icon"
+                        >
                     </a>
-                </div>
 
-                <!--Linkedin-->
-                <div class="linkedin">
+                       
+
                     <a href="https://www.linkedin.com/in/christina-mathews-ba21832b8/" target="_blank">
-                        <div class="footer-text">LinkedIn</div>
+                        <img
+                        class="footer-img" 
+                        src="Content/Images/icons/linked_purple.webp" 
+                        alt="linkedin icon"
+                        >
                     </a>
 
-                </div>
+                        
 
-                <!--GitHub-->
-                <div class="github">
                     <a href="https://github.com/tinaz707" target="_blank">
-                       <div class="footer-text">Git Hub</div> 
+                       <img
+                        class="footer-img" 
+                        src="Content/Images/icons/git.webp" 
+                        alt="github icon"
+                        >
                     </a>
+
 
                 </div>
 
             </div>
-        </footer>
 
+
+
+            <div class="desk-footer">
+                <!-- email -->
+                <div class="link">
+                    <img
+                        class="footer-img" 
+                        src="Content/Images/icons/email_logo_thick.png" 
+                        alt="email icon"
+                    >
+
+                    <a href="mailto:csm37@drexel.edu">csm347@gmail.com</a>
+                </div>
+
+                <!-- Linkin -->
+                <div class="link">
+                    <img
+                        class="footer-img" 
+                        src="Content/Images/icons/linked_purple.webp" 
+                        alt="linkedin icon"
+                    >
+
+                    <a href="https://www.linkedin.com/in/christina-mathews-ba21832b8/" target="_blank">LinkedIn</a>
+
+                </div>
+
+                <!-- GitHub -->
+                <div class="link">
+                    <img
+                        class="footer-img" 
+                        src="Content/Images/icons/git.webp" 
+                        alt="github icon"
+                    >
+
+                    <a href="https://github.com/tinaz707" target="_blank">Git Hub</a>
+
+                </div>
+
+            </div>
+
+        </footer>
+     <script src="scripts/main.js"></script>   
 </body>
 </html>

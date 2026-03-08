@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,144 +10,286 @@
     <link rel="stylesheet" href="css/normalize.css">
 
 </head>
-<body>
-    <main>
-      <section class="page-title">
-                <h1 class="page-title-text">
-                    Art Work
-                </h1>
 
-                <p class="page-sub-text">Traditional Art and Digital Art have been something I’ve grown up with and I will only continue to grow as an artist!
-                </p>
+<body>
+
+    <header class="top-nav">
+
+        <nav class="navbar">
+            <div class="site-name">
+                <a href="index.html">Christina Mathews</a>
+            </div>
+
+            <ul class="menu-all hidden">
+                <li class="nav-menu-item">
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li class="nav-menu-item">
+                    <div class="sub-image-text">
+                        <a href="work.html">Work</a>
+
+                        <img class="drop-down-img" src="content/Images/icons/un_expand.webp" alt="drop down icon">
+                        <img class="un-drop-down-img hide" src="content/Images/icons/expand.webp" alt="">
+                    </div>
+
+                    <ul class="nav-sub-menu sub-hide">
+                        <li class="nav-menu-item"><a href="">Tune Today</a></li>
+                        <li class="nav-menu-item"><a href="pmtc_cs.html">Church Redesign</a></li>
+                        <li class="nav-menu-item"><a href="">Fandango Redesign</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-menu-item">
+                    <div class="sub-image-text">
+                        <a href="about_me.html">About Me</a>
+
+                        <img class="drop-down-img" src="content/Images/icons/un_expand.webp" alt="drop down icon">
+                        <img class="un-drop-down-img hide" src="content/Images/icons/expand.webp" alt="">
+                    </div>
+
+                    <ul class="nav-sub-menu sub-hide">
+                        <li class="nav-menu-item"><a href="art_work.html">Art Work</a></li>
+                        <li class="nav-menu-itemmenu"><a href="photography.html">Photography</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="navbar-icons">
+                <div class="navbar-logo-open">
+                    <img src="content/Images/icons/nav_hamburger.webp" alt="hamburger menu">
+                </div>
+                <div class="navbar-logo-close hide">
+                    <img src="content/Images/icons/nav_hamburger_close.webp" alt="an 'x' button">
+                </div>
+            </div>
+
+
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="page-title">
+            <h1 class="page-title-text">
+                Art Work
+            </h1>
+
+            <p class="page-sub-text">Traditional Art and Digital Art have been something I’ve grown up with and I will
+                only continue to grow as an artist!
+            </p>
         </section>
 
         <!--Digital SUb-->
-        <section class="digital-section">
+        <section class="topic-section">
 
             <!--Sub Title-->
             <div class="page-section-text">
-                <img 
-                    class="pixel-star"
-                    src="content/Images/icons/purple_star.webp" 
-                    alt="pixel star"
-                >
+                <img class="pixel-star" src="content/Images/icons/purple_star.webp" alt="pixel star">
 
                 <div>
                     <h2 class="section-title-text">
                         Digital:
-                    </h2> 
+                    </h2>
                 </div>
             </div>
 
-            
-
-            <!--Content-->
-
-            <div> <!--or figure..?-->
-                <video src="">...what do i put here...</video>
-                <h3 class="project-title">Animation Project (2024)</h3> <!--this or just a heading-->
-                <p>A friend and I worked together to create a short animation using procreate. </p>
-            </div>
 
 
             <!--Digital-->
-            <div class="ditigal-carasol">
-                <div class="art-work-carasol">
-                    <figure>
-                        <img src="content/Images/artwork/low_poly.png" alt="">
-                        <figcaption>Low-Poly Self Portrait</figcaption>
-                    </figure>
+            <div class="carousel">
+                <div class="carousel-container">
+                    <ul class="carousel-item-ul">
+                        <li class="carousel-item">
+                            <img src="content/Images/artwork/low_poly.png" alt="">
+                            <p>Low-Poly Self Portrait</p>
+                        </li>
 
-                    <figure>
-                        <img src="content/Images/artwork/ipco_v.1.png" alt="">
-                        <figcaption>High School Logo V1 (2022)</figcaption>
+                        <li class="carousel-item">
+                            <img src="content/Images/artwork/ipco_v.1.png" alt="">
+                            <p>High School Logo V1 (2022)</p>
 
-                    </figure>
+                        </li>
 
-                    <figure>
-                        <img src="content/Images/artwork/ipco_v.2.png" alt="">
-                        <figcaption> High School Logo V2 (2023)</figcaption>
-                    </figure>
+                        <li class="carousel-item">
+                            <img src="content/Images/artwork/ipco_v.2.png" alt="">
+                            <p> High School Logo V2 (2023)</p>
+                        </li>
+
+                    </ul>
+
                 </div>
+
+                
 
                 <!--the arrows to click through-->
                 <div class="arrows">
-                    <img src="content/Images/artwork/left_arrow.webp" alt="arrow pointing to the left">
-                    <img src="content/Images/artwork/right_arrow.webp" alt="arrow pointing to the right">
+                   <button id="arrow-button" class="carousel-left-arrow" >
+                            <img class="arrow-click" src="content/Images/artwork/left_arrow.webp"
+                            alt="arrow pointing to the left">
+                   </button>
+
+                   
+                   <button id="arrow-button" class="carousel-right-arrow">
+                        <img class="arrow-click" src="content/Images/artwork/right_arrow.webp"
+                            alt="arrow pointing to the right">
+                   </button>
+
+                    
+                   
+
                 </div>
-
-            </div>
-
-
-            <!--Traditional-->
-            <div class="traditional-carasol">
-                <div class="art-work-carasol">
-                    <figure>
-                        <img src="content/Images/artwork/vs_cloth.webp" alt="">
-                        <figcaption>Value study with cloth (2025) </figcaption>
-                    </figure>
-
-                    <figure>
-                        <img src="content/Images/artwork/vs_transparent.webp" alt="">
-                        <figcaption>Value study with Transparency(2025) </figcaption>
-
-                    </figure>
-
-                    <div>
-                       <figure>
-                            <img src="content/Images/artwork/noton.webp" alt="">
-                            <figcaption> Noton (2024)</figcaption>
-                        </figure>
-
-                        <p>Based on Marjane Satrapi Persepolis</p>
-                    </div>
-
-
-                    <figure>
-                        <img src="content/Images/artwork/persp.webp" alt="">
-                        <figcaption> Two Point Perspective (2024)</figcaption>
-                    </figure>
-                </div>
-
-                <!--the arrows to click through-->
-                <div class="arrows">
-                    <img src="content/Images/artwork/left_arrow.webp" alt="arrow pointing to the left">
-                    <img src="content/Images/artwork/right_arrow.webp" alt="arrow pointing to the right">
-                </div>
-
             </div>
         </section>
 
+        
+            <!--Sub Title-->
+            <div class="page-section-text">
+                <img class="pixel-star" src="content/Images/icons/purple_star.webp" alt="pixel star">
+
+                <div>
+                    <h2 class="section-title-text">
+                        Traditional:
+                    </h2>
+                </div>
+            </div>
+
+        <section class="topic-section">
+            <!--Traditional-->
+            <div class="carousel">
+                <div class="carousel-container">
+                    <ul class="carousel-item-ul">
+                        <li class="carousel-item">
+                            <img src="content/Images/artwork/vs_cloth.webp" alt="">
+                            <p>Value study with Cloth(2025)</p>
+                        </li>
+
+                        <li class="carousel-item">
+                            <img src="content/Images/artwork/vs_transparent.webp" alt="">
+                            <p>Value study with Transparency(2025) </p>
+                        </li>
+
+                        <li class="carousel-item">
+                            <img src="content/Images/artwork/noton.webp" alt="">
+                            <p> Noton (2024)</p>
+                        </li>
+
+                        <li class="carousel-item">
+                            <img src="content/Images/artwork/persp.webp" alt="">
+                            <p> Two Point Perspective (2024)</p>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <!--the arrows to click through-->
+                <div class="arrows">
+                   <button class="carousel-left-arrow" >
+                            <img class="arrow-click" src="content/Images/artwork/left_arrow.webp"
+                            alt="arrow pointing to the left">
+                   </button>
+
+                   
+                   <button class="carousel-right-arrow">
+                        <img class="arrow-click" src="content/Images/artwork/right_arrow.webp"
+                            alt="arrow pointing to the right">
+                   </button>
+                </div>
+            </div>
+
+        </section>
+
+
+
     </main>
 
+        <!--footer-->
         <footer>
-            <div class="footer-links">
+            
 
-                <!--email-->
-                <div class="email">
+            <h2>Any questions? Contact Me!</h2>
+
+            <div class="mobile-footer">
+                <div class="link">
+                      
                     <a href="mailto:csm37@drexel.edu">
-                        <div class="footer-text">csm347@gmail.com</div>
+                        <img
+                        class="footer-img" 
+                        src="Content/Images/icons/email_logo_thick.png" 
+                        alt="email icon"
+                        >
                     </a>
-                </div>
 
-                <!--Linkedin-->
-                <div class="linkedin">
+                       
+
                     <a href="https://www.linkedin.com/in/christina-mathews-ba21832b8/" target="_blank">
-                        <div class="footer-text">LinkedIn</div>
+                        <img
+                        class="footer-img" 
+                        src="Content/Images/icons/linked_purple.webp" 
+                        alt="linkedin icon"
+                        >
                     </a>
 
-                </div>
+                        
 
-                <!--GitHub-->
-                <div class="github">
                     <a href="https://github.com/tinaz707" target="_blank">
-                       <div class="footer-text">Git Hub</div> 
+                       <img
+                        class="footer-img" 
+                        src="Content/Images/icons/git.webp" 
+                        alt="github icon"
+                        >
                     </a>
+
 
                 </div>
 
             </div>
+
+
+
+            <div class="desk-footer">
+                <!-- email -->
+                <div class="link">
+                    <img
+                        class="footer-img" 
+                        src="Content/Images/icons/email_logo_thick.png" 
+                        alt="email icon"
+                    >
+
+                    <a href="mailto:csm37@drexel.edu">csm347@gmail.com</a>
+                </div>
+
+                <!-- Linkin -->
+                <div class="link">
+                    <img
+                        class="footer-img" 
+                        src="Content/Images/icons/linked_purple.webp" 
+                        alt="linkedin icon"
+                    >
+
+                    <a href="https://www.linkedin.com/in/christina-mathews-ba21832b8/" target="_blank">LinkedIn</a>
+
+                </div>
+
+                <!-- GitHub -->
+                <div class="link">
+                    <img
+                        class="footer-img" 
+                        src="Content/Images/icons/git.webp" 
+                        alt="github icon"
+                    >
+
+                    <a href="https://github.com/tinaz707" target="_blank">Git Hub</a>
+
+                </div>
+
+            </div>
+
         </footer>
 
+   
+    <script src="scripts/main.js"></script>
+
 </body>
+
 </html>

@@ -14,38 +14,56 @@
     <!--nav-->
     <header class="top-nav">
 
-        <div class="site-name">
-            <a href="index.html">Christina Mathews</a>
-        </div>
+        <nav class="navbar">
+            <div class="site-name">
+                        <a href="index.html">Christina Mathews</a>
+            </div>
+            
+            <ul class="menu-all hidden">
+                <li class="nav-menu-item">
+                    <a href="index.html">Home</a>
+                </li>
 
-        <label for="nav-toggle"></label>
-
-        <nav>
-
-
-
-            <ul>
-                <li><a href="index.html">Home</a></li>
-
-                <li>
-                    <a href="work.html">Work</a>
-                    <ul class="nav-sub-menu"><!-- subheadings-->
-                        <li><a href="">Tune Today</a></li>
-                        <li><a href="pmtc_cs.html">Church Redesign</a></li>
-                        <li><a href=""></a>Fandango Redesign</li>
+                <li class="nav-menu-item">
+                    <div class="sub-image-text">
+                        <a href  ="work.html">Work</a>
+                        
+                            <img class="drop-down-img" src="content/Images/icons/un_expand.webp" alt="drop down icon">
+                            <img class="un-drop-down-img hide" src="content/Images/icons/expand.webp" alt="">
+                    </div>
+                    
+                    <ul class="nav-sub-menu sub-hide">
+                        <li class="nav-menu-item"><a href="">Tune Today</a></li>
+                        <li class="nav-menu-item"><a href="pmtc_cs.html">Church Redesign</a></li>
+                        <li class="nav-menu-item"><a href="">Fandango Redesign</a></li>
                     </ul>
                 </li>
 
-                <li>
-                    <a href="">About Me</a>
-                    <ul class="nav-sub-menu"><!-- subheadings-->
-                        <li><a href="art_work.html">Art Work</a></li>
-                        <li><a href="">Video Editing</a></li>
-                        <li><a href=""></a>Game Dev</li>
-                        <li><a href=""></a>Photography</li>
+                <li class="nav-menu-item">
+                    <div class="sub-image-text">
+                        <a href="about_me.html">About Me</a>
+
+                            <img class="drop-down-img" src="content/Images/icons/un_expand.webp" alt="drop down icon">
+                            <img class="un-drop-down-img hide" src="content/Images/icons/expand.webp" alt="">
+                    </div>                    
+                    
+                    <ul class="nav-sub-menu sub-hide">
+                        <li class="nav-menu-item"><a href="art_work.html">Art Work</a></li>
+                        <li class="nav-menu-itemmenu"><a href="photography.html">Photography</a></li>
                     </ul>                
                 </li> 
             </ul>
+
+            <div class="navbar-icons">
+                <div class="navbar-logo-open">
+                    <img src="content/Images/icons/nav_hamburger.webp" alt="hamburger menu">
+                </div>
+                <div class="navbar-logo-close hide">
+                    <img src="content/Images/icons/nav_hamburger_close.webp" alt="an 'x' button">
+                </div>
+            </div>
+
+
         </nav>
 
     </header>
@@ -176,7 +194,7 @@
     </main>
 
     <!--footer-->
-               <footer>
+    <footer>
             
 
             <h2>Any questions? Contact Me!</h2>
@@ -257,7 +275,9 @@
 
             </div>
 
-        </footer>
+    </footer>
+    
+     <script src="scripts/main.js"></script>   
     
 
 </body>
