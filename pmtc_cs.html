@@ -11,7 +11,7 @@
 </head>
 <body>
 
-        <header class="top-nav">
+    <header class="top-nav">
 
         <nav class="navbar">
             <div class="site-name">
@@ -28,7 +28,7 @@
                         <a href  ="work.html">Work</a>
                         
                             <img class="drop-down-img" src="content/Images/icons/un_expand.webp" alt="drop down icon">
-                            <img class="un-drop-down-img hide" src="content/Images/icons/expand.webp" alt="">
+                            <img class="un-drop-down-img hide" src="content/Images/icons/expand.webp" alt="pull up icon">
                     </div>
                     
                     <ul class="nav-sub-menu sub-hide">
@@ -43,12 +43,12 @@
                         <a href="about_me.html">About Me</a>
 
                             <img class="drop-down-img" src="content/Images/icons/un_expand.webp" alt="drop down icon">
-                            <img class="un-drop-down-img hide" src="content/Images/icons/expand.webp" alt="">
+                            <img class="un-drop-down-img hide" src="content/Images/icons/expand.webp" alt="pull up icon">
                     </div>                    
                     
                     <ul class="nav-sub-menu sub-hide">
                         <li class="nav-menu-item"><a href="art_work.html">Art Work</a></li>
-                        <li class="nav-menu-itemmenu"><a href="photography.html">Photography</a></li>
+                        <li class="nav-menu-item"><a href="photography.html">Photography</a></li>
                     </ul>                
                 </li> 
             </ul>
@@ -66,7 +66,6 @@
         </nav>
 
     </header>
-
     <main>
       <section class="page-title">
                 <h1 class="page-title-text">
@@ -76,13 +75,18 @@
                 <p class="page-sub-text">Mar Thoma Church of Philadelphia Website Redesign!</p>
         </section>
 
-            <img
-                 class="cs-hero-img"
-                 src="Content/Images/covers/PMTC_Cover.webp"
-                 alt="A Laptop with a Phone in front of it to the right showcasing the homepage screen of The Philadelphia Mar Thoma Church Redesign Website"
-            >
+                <picture  class="cs-hero-img">
+                    <source media="(min-width: 1024px)" srcset="content/Images/covers/pmtc_cover_2x.webp">
+                    
+                   <img
+                        class="preview-cs-img"
+                        src="content/Images/covers/pmtc_cover_3x.webp"
+                        alt="A Laptop with a Phone in front of it to the right showcasing the homepage screen of The Philadelphia Mar Thoma Church Redesign Website"
+                    >
+                </picture>
+                
 
-        <section class="cs-details-section">
+        <div class="cs-details-section">
             <div class="cs-details">
                 <p><span class="cs-detail-title">Role:</span></p>
                 <p><span class="cs-detail-body">UX/UI Designer</span></p>
@@ -98,11 +102,11 @@
                 <p><span class="cs-detail-body">Figma</span></p>
             </div>
         
-            <div id="duration" class="cs-details">
+            <div class="cs-details">
                 <p><span class="cs-detail-title">Duration:</span></p>
                 <p><span class="cs-detail-body">09/2024 - 07/2025</span></p>
             </div>
-        </section>
+        </div>
 
 
     <div class="cs-body">
@@ -241,7 +245,7 @@
             <p>Overall, with this project, I got a better idea of the UX Workflow as well as get into the tool Figma. I learned to look not only at the design but also at the usability.  While this project isn’t perfect, it was definitely a great learning experience I worked through.</p>
        
             <div class="button-box-cs">
-                <a href="https://www.figma.com/proto/JZdWObufkAFcNSAVZ9sh9G/IDM-212-Christina-Mathews-Final?page-id=2%3A2465&node-id=2-6653&viewport=-1440%2C-293%2C0.08&t=gZgHfLUmmddXx5M7-1&scaling=scale-down&content-scaling=fixed" target="_blank" class="button-link">Check Out The Protoype</a>
+                <a href="https://www.figma.com/proto/JZdWObufkAFcNSAVZ9sh9G/IDM-212-Christina-Mathews-Final?page-id=2%3A2465&node-id=2-6653&viewport=-1440%2C-293%2C0.08&t=gZgHfLUmmddXx5M7-1&scaling=scale-down&content-scaling=fixed" target="_blank" class="button-link">Check Out The Prototype</a>
             </div>
 
         </section>
@@ -307,7 +311,7 @@
                     <a href="mailto:csm37@drexel.edu">csm347@gmail.com</a>
                 </div>
 
-                <!-- Linkin -->
+                <!-- Linkedin -->
                 <div class="link">
                     <img
                         class="footer-img" 

@@ -11,7 +11,7 @@
 </head>
 <body>
 
-        <header class="top-nav">
+    <header class="top-nav">
 
         <nav class="navbar">
             <div class="site-name">
@@ -28,7 +28,7 @@
                         <a href  ="work.html">Work</a>
                         
                             <img class="drop-down-img" src="content/Images/icons/un_expand.webp" alt="drop down icon">
-                            <img class="un-drop-down-img hide" src="content/Images/icons/expand.webp" alt="">
+                            <img class="un-drop-down-img hide" src="content/Images/icons/expand.webp" alt="pull up icon">
                     </div>
                     
                     <ul class="nav-sub-menu sub-hide">
@@ -43,12 +43,12 @@
                         <a href="about_me.html">About Me</a>
 
                             <img class="drop-down-img" src="content/Images/icons/un_expand.webp" alt="drop down icon">
-                            <img class="un-drop-down-img hide" src="content/Images/icons/expand.webp" alt="">
+                            <img class="un-drop-down-img hide" src="content/Images/icons/expand.webp" alt="pull up icon">
                     </div>                    
                     
                     <ul class="nav-sub-menu sub-hide">
                         <li class="nav-menu-item"><a href="art_work.html">Art Work</a></li>
-                        <li class="nav-menu-itemmenu"><a href="photography.html">Photography</a></li>
+                        <li class="nav-menu-item"><a href="photography.html">Photography</a></li>
                     </ul>                
                 </li> 
             </ul>
@@ -87,7 +87,7 @@
         <!--About Me Section Tabs-->
         <section class="about-me-tabs">
 
-            <div class="who-tab">
+            <div class="w-tab">
                 <h2 class="about-me-tab-title">
                     Who ??
                 </h2>
@@ -99,7 +99,7 @@
                 </div>
             </div>
 
-            <div class="what-tab">
+            <div class="w-tab">
                 <h2 class="about-me-tab-title">
                     What ??
                 </h2>
@@ -109,7 +109,7 @@
                 </div>
             </div>
 
-            <div class="why-tab">
+            <div class="w-tab">
                 <h2 class="about-me-tab-title">
                     Why ??
                 </h2>
@@ -123,8 +123,25 @@
 
         </section>
 
-            <div class="button-box">
-                <a href="content/downloads/resume 2.pdf" target="_blank" class="button-link">Check Out My Resume</a>
+        <section class="about-me-tabs-version2">
+
+            <div class="w-tabV2">
+                <h2 id="who??" class="about-me-tab-titleV2">Who ??</h2>
+                <h2 id="what??" class="about-me-tab-titleV2"> What ??</h2>
+                <h2 id="why??"  class="about-me-tab-titleV2"> Why ??</h2>
+            </div>
+
+            <div class="about-me-tab-textV2">
+                <p>
+                    If you still aren't aware of who I am well I'm Christina! I am currently an undergraduate student studying User Experience and Interaction Design at Drexel University!
+                </p>
+            </div>
+            
+
+        </section>
+
+            <div id="about-me-resume" class="button-box-cs">
+                <a href="content/downloads/resumeV2.pdf" target="_blank" class="button-link">Check Out My Resume</a>
             </div>        
 
 
@@ -142,33 +159,38 @@
                         My Skill Set:
                     </h2>
                 </div>
-            </div>
-  
 
+
+            </div>
+
+                  <p class="page-sub-skill-text">
+                    I have experience with the following software/languages!
+                </p>
             
-                <figure class="skills-image">
-                   <img src="content/Images/about/skills_about_1x.webp" alt="">
-                </figure>
+                <picture class="about-me-skills">
+                    <source media="(min-width: 720px)" srcset="content/Images/about/skills_tablet.webp">
+                    <img class="skills-image" src="content/Images/about/skills_about_1x.webp" alt="Software icons Photoshop, Figma, Illustrator, and Premiere pro as well as programming language icons for HTML and CSS.">
+            </picture> 
 
            
         </section>
         
         <!--Character stats only for Desk + Tablet-->
-        <div class="charcater-stats">
+        <div class="character-stats">
             <img class="stats-three-stars" src="" alt="three stars in straight line">
 
             <!--character-->
             <figure>
                 <p class="stats-click-me">click me!</p>
                 <img 
-                    class="stats-charcter-img" 
+                    class="stats-character-img" 
                     src="" 
                     alt="half body of pixel character smiling"
                 >
             </figure>
 
             <!--the title box to the left of the character-->
-            <div class="charcter-stats-title">
+            <div class="character-stats-title">
                 <p>Character Stats</p>
             </div>
 
@@ -239,24 +261,24 @@
                     <ul class="carousel-item-ul">
                         <li class="carousel-item">
                             <a href="art_work.html">
-                                <img src="content/Images/about/ipco.webp" alt="">
+                                <img src="content/Images/about/ipco.webp" alt="High school club IPCO (Indian Pakistan Cultural Organization) logo design that won in 2025.  It is the national animal for India (Tiger) and Pakistan(Markhor)">
                                 <p class="about-title">Art Work</p>
                             </a>
                         </li>
 
                         <li class="carousel-item">
-                            <img src="content/Images/about/vid.webp" alt="">
+                            <img src="content/Images/about/vid.webp" alt="Two-dimensional version of Christina with hands up at the bottom with an explosion behind her">
                             <p class="about-title">Video Editing </p>
                         </li>
 
                         <li class="carousel-item">
-                            <img src="content/Images/about/game.webp" alt="">
+                            <img src="content/Images/about/game.webp" alt="Snapshot from developing game, a pixel character in the middle of a pixelated bedroom with the moonlight shining through the single window">
                             <p class="about-title">Game Dev</p>
                         </li>
 
                         <li class="carousel-item">
                             <a href="photography.html">
-                                <img src="content/Images/about/phot.webp" alt="">
+                                <img src="content/Images/about/phot.webp" alt="Zoomed-in photo of  traffic in Kerala India with two people driving on their motorcycle's and a car behind them.">
                                 <p class="about-title">Photography</p>                                
                             </a>
 
@@ -341,7 +363,7 @@
                     <a href="mailto:csm37@drexel.edu">csm347@gmail.com</a>
                 </div>
 
-                <!-- Linkin -->
+                <!-- LinkedIn  -->
                 <div class="link">
                     <img
                         class="footer-img" 

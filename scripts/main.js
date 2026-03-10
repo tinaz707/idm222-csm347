@@ -1,3 +1,5 @@
+
+
 const openMenu = document.querySelector('.navbar-logo-open');
 const closeMenu = document.querySelector('.navbar-logo-close');
 const menu = document.querySelector('.menu-all') //the tabs
@@ -17,18 +19,6 @@ closeMenu.addEventListener("click", () =>{
     menu.classList.toggle('hidden');
 })
 
-//only works for one
-// const dropdownButton = document.querySelector('.sub-image-text');
-// const submenu = document.querySelector('.nav-sub-menu');
-// const dropdown = document.querySelector('.drop-down-img');
-// const undrop = document.querySelector('.un-drop-down-img');
-
-// dropdownButton.addEventListener("click", ()=> {
-//     submenu.classList.toggle('sub-hide');
-
-//     dropdown.classList.toggle('hide');
-//     undrop.classList.toggle('hide');
-// })
 
 
 
@@ -92,5 +82,53 @@ carousel.forEach(_slide =>{
 
 
 });
+
+
+
+//About Me tabs
+const  aboutInfo = [
+    {
+        title: "who??",
+        text: "If you still aren't aware of who I am well I'm Christina! I am currently an undergraduate student studying User Experience and Interaction Design at Drexel University!",
+    },
+    
+    {
+        title: "what??",
+        text: "I consider myself a creative designer who is confident in my UI skills. I am open-minded and tend to understand users’ needs, and with this, I bring valuable information and skills to the table.",
+    },
+        
+    {
+        title: "why??",
+        text: "Art has always been such an important factor to me which is why I am pursing my passion! My goal in life is to push beyond my limits in the creative world. I don’t want to be stuck working with things I’m comfortable with; I want to keep learning and growing, trying new methods and materials.",
+    }
+]
+
+const aboutContainer = document.querySelector(".about-me-tabs-version2");
+const aboutButton = aboutContainer.querySelectorAll('.about-me-tab-titleV2');
+const aboutText = aboutContainer.querySelector(".about-me-tab-textV2");
+console.log(aboutButton);
+
+
+aboutButton.forEach(button =>{ //loop through each array
+    button.addEventListener("click", () =>{ //when you click on the tab
+
+        for (let i =0; i<aboutInfo.length; i++){
+            if(aboutInfo[i].title === button.id){ //does the title for each array exactly match the aboutButton id
+                tab = aboutInfo[i]; //if it does, tab will store that info
+                break; //found what you, need then stop
+            }
+        }
+
+
+        if(tab){
+            updateUi(tab);
+        }
+    });
+});
+
+
+function updateUi(tab){
+    aboutText.querySelector("p").innerText = tab.text; //find the paragraph in the container and replace the text with the array text
+};
 
 
