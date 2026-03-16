@@ -566,6 +566,7 @@ h1, h2, h3, h4{
 
         p{
             margin: 5px 0;
+            padding: 0 15px;
         }
 
         .bullet-point-arrow{
@@ -758,11 +759,11 @@ h1, h2, h3, h4{
 
 /*Photo Page*/
 p{
-            color: var(--light-purple);
-            font-family: var(--p-font-bold);
-            font-size: var(--medium-p);
-            padding: var(--element-margins);
-        }
+    color: var(--light-purple);
+    font-family: var(--p-font);
+    font-size: var(--medium-p);
+    padding: var(--element-margins);
+}
         
 .photo-all{
     display: flex;
@@ -1108,6 +1109,10 @@ footer{
         .cs-section-images{
             display: flex;
             width: 70%;
+        }
+
+        p{
+            padding: 0 var(--element-margins);
         }
 
         .page-section-sub{
