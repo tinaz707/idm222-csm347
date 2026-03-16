@@ -25,32 +25,11 @@
                 </li>
 
                 <li class="nav-menu-item">
-                    <div class="sub-image-text">
                         <a href  ="work.html">Work</a>
-                        
-                            <img class="drop-down-img" src="content/Images/icons/un_expand.webp" alt="drop down icon">
-                            <img class="un-drop-down-img hide" src="content/Images/icons/expand.webp" alt="pull up icon">
-                    </div>
-                    
-                    <ul class="nav-sub-menu sub-hide">
-                        <li class="nav-menu-item"><a href="">Tune Today</a></li>
-                        <li class="nav-menu-item"><a href="pmtc_cs.html">Church Redesign</a></li>
-                        <li class="nav-menu-item"><a href="">Fandango Redesign</a></li>
-                    </ul>
                 </li>
 
                 <li class="nav-menu-item">
-                    <div class="sub-image-text">
                         <a href="about_me.html">About Me</a>
-
-                            <img class="drop-down-img" src="content/Images/icons/un_expand.webp" alt="drop down icon">
-                            <img class="un-drop-down-img hide" src="content/Images/icons/expand.webp" alt="pull up icon">
-                    </div>                    
-                    
-                    <ul class="nav-sub-menu sub-hide">
-                        <li class="nav-menu-item"><a href="art_work.html">Art Work</a></li>
-                        <li class="nav-menu-item"><a href="photography.html">Photography</a></li>
-                    </ul>                
                 </li> 
             </ul>
 
@@ -63,17 +42,18 @@
                 </div>
             </div>
 
-
         </nav>
 
     </header>
 
-    
             <div class="hero-photo">
 
-                <picture >
-                    <source media="(min-width: 1024px)" srcset="content/Images/Persona/index_desk_2x_glow.webp">
+                <picture>
+                    <source media="(min-width: 1024px) and (prefers-color-scheme: light)" srcset="content/Images/Persona/LM_index_desk_2x_glow.webp">
 
+                    <source media="(min-width: 1024px)" srcset="content/Images/Persona/index_desk_2x_glow_smaller.webp">
+
+                    <source media="(prefers-color-scheme: light)" srcset="content/Images/LM_star_2x.webp">
                     <img
                         class="single-star-hero"
                         src="content/Images/star_2x.webp" 
@@ -82,9 +62,6 @@
                 </picture>
                         
             </div>
-
-  
-
 
     <main class="index-main">
 
@@ -106,22 +83,30 @@
                     <a href="about_me.html" class="button-link">Read More About Me</a>
                 </div>
       
-                <img 
-                    class="dangaling-persona"
-                    src="content/Images/Persona/persona_2x_hero.webp"
-                    alt="white pixel version of character christina hanging off the 'Read More About Me' button by her hoodie"
-                >                    
+                <picture>
+                    <source srcset="content/Images/Persona/persona_2x_M_darkMode.webp" media="(prefers-color-scheme: light)">
+                    
+                    <img 
+                        class="dangaling-persona"
+                        src="content/Images/Persona/persona_2x_hero.webp"
+                        alt="white pixel version of character christina hanging off the 'Read More About Me' button by her hoodie"
+                    >    
+                </picture>
+                
             
             </div>
-
-
-
+        
         </section>
 
         <!--Portfolio Section-->
         <section class="portfolio-intro">
-            <div class="page-section-text">
-                <img class="pixel-star" src="content/Images/icons/purple_star.webp" alt="pixel purple star">
+            <div class="port-section-text">
+                <picture>
+                    <source srcset="content/Images/icons/black_star_1.webp" media="(prefers-color-scheme: light)">
+
+                    <img class="pixel-star" src="content/Images/icons/purple_star.webp" alt="pixel purple star">
+                </picture>
+
                 <h2>Portfolio</h2> 
             </div>
             
@@ -133,42 +118,36 @@
             <!--tune today-->
             <div class="project-outline">
                 <div class="project-div">
-
-                <!-- <div class="cs-img-h2"> -->
-                    <div class="cs-snip-title">
-                            <h2>01</h2>
-                            <h2>Tune Today</h2>
+                
+                        <div class="cs-snip-title">
+                                <h2>01</h2>
+                                <h2>Tune Today</h2>
                         </div>
-                        
-
-                        <picture  class="preview-cs-img">
-                            <source media="(min-width: 1024px)" srcset="content/Images/covers/TT_cover_2x.webp">
                             
+
                             <img 
-                                
+                            id="tt-image-preview"
+                                class="preview-cs-img"
                                 src="content/Images/covers/TT_cover_3x.webp" 
                                 alt="Two smartphones displaying the TuneToday guitar app, the bigger screen showing the tuning interface and the smaller screen showing the song library"
                             >
-                        </picture>
-                <!-- </div> -->
-
                
                     <div class="cs-info">
                         <p class="sub-img-text">Designing a guitar tuning app!</p>
-                        
+                            
                         <p>Tune Today lets users get through the task of tuning their guitar to jumping straight into learning a song!</p>
-                        
+                            
                         <div class="button-box">
-                            <a href="" class="button-link">View Case Study</a>
+                            <a href="tunetoday_cs.html" class="button-link">View Case Study</a>
                         </div>                
-                    
+                        
                     </div>
              
                 </div>
             </div>
 
 
-                    <!--Church-->
+            <!--Church-->
             <div class="project-outline">
                 <div class="project-div">
                     
@@ -179,17 +158,12 @@
                     </div>
 
 
-                    
-                    
-                    <picture  class="preview-cs-img">
-                        <source media="(min-width: 1024px)" srcset="content/Images/covers/pmtc_cover_2x.webp">
-                        
+                 
                     <img
                             class="preview-cs-img"
-                            src="content/Images/covers/pmtc_cover_3x.webp"
+                            src="content/Images/covers/pmtc_cover_2x.webp"
                             alt="A Laptop with a Phone in front of it to the right showcasing the homepage screen of The Philadelphia Mar Thoma Church Redesign Website"
                         >
-                    </picture>
                     
                     
                     <div class="cs-info">
@@ -218,25 +192,22 @@
                         <h2 id="fandango-h2">Fandango Homepage Redesign</h2>
                     </div>
 
-                    <picture  class="preview-cs-img">
-                        <source media="(min-width: 1024px)" srcset="content/Images/covers/fandango_cover_2x.webp">
                         
                         <img
                             class="preview-cs-img"
                             src="content/Images/covers/fandango_cover_3x.webp"
                             alt="A Laptop with a screen showcasing the Low-Fidelity Wireframe of the Redesigned Fandango Homepage"
                         >
-                    </picture>
 
                     <div class="cs-info">
                         <p class="sub-img-text">Redesigning A Homepage!</p>
 
                         <p>
-                            This redesign focused on improving fandangos homepage which suffered from cluttered and overly long design, minimal feedback on interactive elements, and poorly organized navigation areas…
+                            This redesign focused on improving fandangos homepage which suffered from many usability problems
                         </p>
 
                         <div class="button-box">
-                            <a href=".." class="button-link">View Case Study</a>
+                            <a href="fandango_cs.html" class="button-link">View Case Study</a>
                         </div>
 
                     </div>
@@ -251,7 +222,7 @@
 
         <!--link to projects page-->
         <div class="see-more-work">
-            <a href="work.html"> Want to see more..?! ⟶ </a> <!--would i need to do (--&lt;)-->
+            <a href="work.html"> Want to see more..?! &#8594; </a> 
         </div>
 
     
