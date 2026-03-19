@@ -583,7 +583,9 @@ h1, h2, h3, h4{
     margin: 40px;
     
     img{
-        width: 100%;
+        width:80%;
+        display: flex;
+        margin: auto;
     }
 
 
@@ -668,43 +670,7 @@ h1, h2, h3, h4{
 
     
 
-    .education-section{
-        display: grid;
-        grid-template-columns: 2.50fr 1fr;
-        grid-template-rows: auto;
-        column-gap: var(--small-gap);
 
-        
-
-        .left-text{
-            margin-bottom: 10px;
-            text-align: end;
-        }
-
-        .edu-sub-title{
-
-            grid-column: 1;
-            grid-row: 1;
-
-            h3{
-                margin: 15px 0;
-            }
-        }
-
-        .edu-text {
-            grid-column: 1;
-            grid-row: 2;
-           
-        }
-
-        .edu-dates{
-            grid-column: 2;
-            grid-row: 2;
-           text-align: end;
-        }
-
-        
-    }
     
 
 
@@ -996,11 +962,11 @@ footer{
 
     /*about me*/
     .about-me-pic{
-        display: flex;
-        justify-content: center;
+        /* display: flex;
+        justify-content: center; */
         
         img{
-            width: 50%;
+            width: 40%;
         }
     }
 
@@ -1025,9 +991,36 @@ footer{
     } 
 
     .education-section{
-        column-gap: var(--medium-gap);
-    }
+        display: grid;
+        grid-template-columns: 2.50fr 1fr;
+        grid-template-rows: auto;
+        column-gap: var(--small-gap);
 
+
+        .edu-sub-title{
+
+            grid-column: 1;
+            grid-row: 1;
+
+            h3{
+                margin: 15px 0;
+            }
+        }
+
+        .edu-text {
+            grid-column: 1;
+            grid-row: 2;
+           
+        }
+
+        .edu-dates{
+            grid-column: 2;
+            grid-row: 2;
+           text-align: end;
+        }
+
+        
+    }
     .check-out-more{
         .checkmore-container{
             flex-direction: row;
@@ -1445,29 +1438,7 @@ footer{
     }
 
     .education-section{
-        display: grid;
-        grid-template-columns: 2.50fr 1fr;
-        grid-template-rows: auto;
         column-gap: var(--medium-gap);
-
-        p{
-            margin-bottom: 10px;
-        }
-
-        .edu-sub-title{
-            grid-column: 1;
-            grid-row: 1;
-        }
-
-        .edu-text {
-            grid-column: 1;
-            grid-row: 2;
-        }
-
-        .edu-dates{
-            grid-column: 2;
-            grid-row: 2;
-        }
     }
 
     .check-out-more{
